@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Soft Pump</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/projects.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a href="index.html#portfolio" class="text-light"> Back to Projects </a>
+        </div>
+    </nav>
+  <div class="row">
+
+    <!-- ===== LEFT COLUMN ===== -->
+
+    <div class="col-12 col-lg-4 order-2 order-lg-1 left-col" >
+        <img src="assets/img/portfolio/DEA_pump.png" class="img-fluid mx-auto d-block">
+            <div class="caption">Final pump assembly</div> 
+        <img src="assets/img/portfolio/DEA_teslapump.png" class="img-fluid mx-auto d-block">
+            <div class="caption">Tesla valve prototype example</div> 
+        <img src="assets/img/portfolio/DEAimg.png" class="img-fluid mx-auto d-block">
+            <div class="caption">CAD of pump assembly</div> 
+        <video class="img-fluid mx-auto dblock vertical" controls>
+            <source src="assets/img/portfolio/DEA_vid1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+          <div class="caption">Separate actuation of three DEAs in sequence</div>
+        <video class="img-fluid mx-auto dblock" controls>
+            <source src="assets/img/portfolio/DEA_vid2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+          <div class="caption">Dielectric Elastomer Actuator (DEA)</div>
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="col-12 col-lg-8 order-1 order-lg-2">
+      <h1>Soft Pump</h1>
+      <p>Summer 2024</p>
+
+      <div class="section">
+        <h2>Project Description</h2>
+        <p>
+            <!-- so basically, we started with the like concave dea thing that the lab had alr come up with. initially 
+            used tesla valve as a one way valve, didn't work well though. so i iterated off of that, worked through
+            a bunch of versions that used tesla valves. decided that it wasn't feasible after those failed, came up
+            with sequence of deas to create a one way valve. "hacked" a custom switch box that was really just a 
+            bunch of relay reeds. modified labView code to individually activate multiple DEAs separately, then created
+            the sequence. similarly to the initial design, used solidWorks to design and print molds. then casted CN9028 
+            elastomer, assembled w deas to build pump structure. then tested, and tested again. had to make modifications
+            to the mold/pump structure as well as placement of the deas themselves.  -->
+            This project was conducted in the Clarke Lab at Harvard's School of Engineering and Applied Science and advised by Professor David R. Clarke.  
+            The project was completed through the Program for Research in Science and Engineering at Harvard College during the summer of 2024. 
+            I am currently developing the final design further to work with the liquid metal alloy eGaIn. 
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Abstract</h2>
+        <h3>Published in the HSURV 2023 Abstract Book</h3>
+        <p>
+          Soft robotics provides flexibility and adaptability ideal
+          for creating versatile, responsive technologies suited for
+          use in contact with human beings. The objective of
+          this project is to develop a soft pump using a design
+          for dielectric elastomer actuators (DEAs) we previously
+          developed, which morphs into a hemispherical shape in
+          response to an applied voltage. The multilayer DEAs are
+          constructed by spin coating CN9028 acrylic elastomer
+          onto an acrylic substrate followed by stamping carbon
+          nanotubes over the elastomer using circular PET masks
+          of varying diameters, repeating these steps to form five
+          layers. The pump structure is constructed by pouring
+          elastomer into 3D printed molds, using additional elastomer
+          to attach both sides of the mold and DEAs together.
+          Initial pump designs failed to induce uniaxial flow when
+          using Tesla valves to control the flow, likely due to the
+          size of the liquid channels, slow flow rate, and structure
+          material. We removed the Tesla valves and modified
+          the design to use multiple DEAs arranged sequentially as
+          valves. The modified structure uses two outer DEAs which
+          actuate downward in sequence into the fluid channel to
+          control the liquid flow direction. A central DEA acts as a
+          pump. Using LabView to program the DEAs to actuate in
+          specific sequences, the pump moves liquid uniaxially with
+          partial success, though the efficiency of fluid movement is
+          currently inconsistent. The interaction between DEAs has
+          been identified as a critical factor affecting the system’s
+          performance. Current considerations to improve the pump
+          include varying the thickness of the DEAs, number of diode
+          layers in each DEA, and the distances between the DEAs
+          on the pump structure to enhance unidirectional flow and
+          overall reliability. Successful development of the soft pump
+          will allow for its integration into a tunable antenna system
+          using the liquid metal alloy eGaIn, which has applications
+          in wearable electronics and medical devices
+        </p>
+      </div>
+
+      <div class="presentation">
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQv-XO8N-OUMGhIeH61A8x-xPccEH0iT7Zh7O7XsMFOpyWWYpMDO9u7x4v_8mY9hlvilhvUqLk6OVe_/pubembed?start=true&loop=true&delayms=3000" frameborder="0" width="998" height="590" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <div class="caption">Presentation slides</div> 
+      </div>
+
+    </div>
+  </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>

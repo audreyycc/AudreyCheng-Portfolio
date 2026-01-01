@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>DORI Project Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+
+  <link href="css/styles.css" rel="stylesheet" />
+  <link href="css/projects.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a href="index.html#portfolio" class="text-light"> Back to Projects </a>
+        </div>
+    </nav>
+  <div class="page">
+
+    <!-- ===== LEFT COLUMN ===== -->
+
+    <div class="left-col order-2 order-lg-1" >
+
+      <img src="assets/img/portfolio/DORI.png" class="img-fluid mx-auto d-block">
+        <div class="caption">Final product, outboard module</div>
+      <video muted class="img-fluid mx-auto dblock vertical" controls>
+        <source src="assets/img/portfolio/DORI_linearprototype.mp4.mov" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+        <div class="caption">Linear rail prototype</div>
+      <img src="assets/img/portfolio/DORI_blocker.png" class="img-fluid mx-auto d-block">
+        <div class="caption">Spring-loaded prototype</div>
+      <video muted class="img-fluid mx-auto dblock" controls>
+        <source src="assets/img/portfolio/DORI_blockertest.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+        <div class="caption">Tow tank test (spring-loaded model)</div>
+      <video muted class="img-fluid mx-auto dblock vertical" controls>
+        <source src="assets/img/portfolio/DORI_mockup.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+        <div class="caption">Cardboard mockup</div>
+      <img src="assets/img/portfolio/DORI_CAD.png" class="img-fluid mx-auto d-block">
+        <div class="caption">CAD model</div>
+      <img src="assets/img/portfolio/DORI_testingdata.png" class="img-fluid mx-auto d-block">
+        <div class="caption">Test data</div>
+      <img src="assets/img/portfolio/DORI_teamphoto.JPG" class="img-fluid mx-auto d-block">
+        <div class="caption">Team photo!</div>
+    </div>
+
+    <!-- ===== CENTER COLUMN ===== -->
+    <div class="center-col order-1 order-lg-2">
+      <img src="assets/img/portfolio/DORI_logo.png" class="logo">
+
+      <div class="section">
+        <p>Fall 2025</p>        
+        <h2>Project Description</h2>
+        <p>
+          This project was completed as part of 2.009 Product Design Process at MIT. Our team was made up of 16 undergraduates. In addition to 
+          design and build responsibilities, I also acted as a co-Story Officer, working on product branding and team social media. 
+          Throughout this project I practiced 3D CAD and FEA in Fusion and machined parts using tools including a manual mill and horizontal bandsaw.
+          I also used Adobe Suite (Illustrator, Photoshop) for various Story Officer tasks.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Product</h2>
+        <p>
+          DORI is a deployable propeller guard intended for use on recreational motor boats. While existing stationary prop guards reduce fuel efficiency 
+          and decrease speeds, DORI allows boaters to prioritize safety without compromising performance.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Design Process</h2>
+
+        <h3>Ideation, research, and conceptualization</h3>
+        <p>
+          We began brainstorming product opportunities by observing real-world problems and interviewing professionals in various fields of work. 
+          After discussing our ideas as a team, we narrowed them down to the six most feasible product opportunities. In smaller subteams, 
+          we researched each of the six opportunities and analyzed their consumer desireabilty, technical feasibility, and business viability before 
+          further narrowing down to four concepts. After lots of group discussion, decision matrices, and further research including interviews with
+          potential users, we decided to move forward with the deployable propeller guard concept. 
+        </p>
+
+        <h3>Iterative design</h3>
+        <p>
+          Our original use case was based on sailing school instructor motorboats. Students who fall off the instructor's boat or nearby sailboats
+          and get swept under the boat are easily injured by the propeller. As such, our device required fast deployment and sensing capabilities to detect 
+          a person in the water near the propeller. 
+
+          We initially planned to mount our device to the transom at the back of the boat and intended to use a linear rail system to deploy the guard, 
+          but after realizing that the outboard rotates as the boat changes directions, we decided to mount to the midsection of the outboard instead. 
+          We built cardboard mock-ups of several designs and chose our final design based on its compactness (conversations with potential users made it clear that 
+          boaters prefered minimal bulkiness) and relative simplicity (only required one axle to actuate and didn't risk collision with the transom). 
+
+          Since our concept required fast deployment, we chose pre-loaded springs as our actuation method and decided to use a sonar sensor mounted 
+          underneath the front of the boat. We then designed the guard in fusion and machined parts, primarily by waterjetting and manual milling. 
+        </p>
+
+        <div class="two-col">
+          <div>
+            <p>
+                After feedback from course staff and internal team discussion, we decided to alter our use case, making the project more feasible given our timeline.
+                Our new use case focused on recreational motorboats entering dangerous areas (i.e. mixed-use areas, swimming areas), which also helped to broaden our
+                potential user base. 
+
+                Given this change, we eliminated the sonar sensor system from our device. We also decided to use hydraulics to actuate our guard, since hydraulic systems are 
+                already commonly used on motorboats, so they are well-suited to marine environments and boaters are already familiar with them. 
+                We modified a double-ended hydraulic cylinder sourced from a motorboat steering kit, shortening its length to decrease the bulkiness of our overall assembly. 
+
+                We chose to use a rack and pinion to translate the linear motion from the hydraulic ram to the rotational motion 
+                needed to deploy the guard. After CADing the assembly in Fusion, we made engineering drawings for each part before machining.
+            </p>
+          </div>
+          <div>
+            <video muted width="200" height="auto" controls>
+              <source src="assets/img/portfolio/DORI_techprototype.mp4" type="video/mp4">
+            Your browser does not support the video tag. 
+            </video>
+            <div class="caption">Prototype using hydraulic ram + rack and pinion</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3>Verification and validation</h3>
+        <p>Once we'd built the full guard, we did FEA on the guard in Fusion and conducted tests in a tow tank to compare drag for our device versus a 
+           commercial propeller guard (a plot of this data is included in the left column). We found that our current guard experiences about 2x the drag force of a typical 
+           commercial guard. However, our guard will remain stowed out of the water, preventing it from effecting fuel efficiency until deployed. </p>
+      </div>
+
+      <div class="section">
+        <h3>Commercialize</h3>
+        <p>
+          Leading up to our final presentation, we finalized our UI and focused on polishing the overall product. 
+          We decided to use a mechanical hand crank installed at the helm of the boat to deploy the guard, with a hard stop to signify to the user that the 
+          guard had been fully deployed. We also developed our product brand, including naming our product and designing a logo.
+        </p>
+      </div>
+
+      <iframe title="vimeo-player" src="https://player.vimeo.com/video/1140118772?h=fd6da49d65" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
+      <div class="caption">Watch our final presentation! (Skip to 2:00:00)</div>
+    </div>
+
+    <!-- ===== RIGHT COLUMN ===== -->
+    <div class="right-col order-3 order-lg-3">
+      <img src="assets/img/portfolio/DORI_productsheet.jpg" alt="DORI vertical poster" class="poster img-fluid mx-auto d-block">
+        <div class="caption">Product sheet</div>
+      <div class="centered-img">
+        <img src="assets/img/portfolio/DORI_productcontract.jpg" class="img-fluid mx-auto d-block" alt="...">
+          <div class="caption">Product contract</div>
+      <!-- <img src="assets/img/portfolio/DORI_techreview.jpg" class="img-fluid mx-auto d-block" alt="..."> -->
+        <img src="assets/img/portfolio/DORI_moodboard.png" class="img-fluid mx-auto d-block" alt="...">
+          <div class="caption">Brand moodboard</div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>

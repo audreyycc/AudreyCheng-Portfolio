@@ -1,0 +1,177 @@
+/* Project Styles */
+:root {
+  --blue-dark: #1f2f6b;
+  --blue-mid: #3a6ea5;
+  --blue-light: #e6f4fb;
+  --navbar-height: 72px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding-top: var(--navbar-height);
+  font-family: 'Montserrat';
+  color: black;
+  background-color: #fff;
+}
+
+h1, h2 {
+  font-weight: 600;
+  color: black;
+  margin-top: 0;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  color: black;
+  margin-top: 0;
+  font-style: italic;
+}
+
+p {
+  line-height: 1.6;
+  margin: 0.5rem 0 1rem;
+  font-size: 0.95rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: .5;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+/* ====== LAYOUT ====== */
+.page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1.1fr 2fr 1fr;
+  gap: 2rem;
+}
+
+.row {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* ====== LEFT COLUMN ====== */
+.left-col {
+  display: grid;
+  justify-content: center;
+}
+.left-col img {
+  width: clamp(200px, 100%, 300px);
+  border-radius: 3px;
+}
+
+.vertical {
+  width: clamp(200px, 70%, 300px);
+  height: auto;
+}
+
+.caption {
+  font-size: 0.75rem;
+  color: #555;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-style: italic;
+}
+
+/* ====== CENTER COLUMN ====== */
+.logo {
+  width: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.section h2 {
+  margin-bottom: 0.75rem;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.two-col video {
+  justify-self: end;
+  width: clamp(200px, 90%, 350px);
+  height: auto;
+}
+
+/* ====== RIGHT COLUMN ====== */
+.right-col {
+  /* display: flex; */
+  justify-content: center;
+}
+
+.poster {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 10px;
+}
+.right-col img {
+  width: clamp(200px, 100%, 300px);
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 1100px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .right-col {
+    order: 3;
+  }
+}
+
+/* DORI */
+.logo {
+  width: clamp(80px, 30%, 160px);
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.moodboard {
+  width: clamp(80px, 70%, 800px);
+  height: auto;
+}
+
+/* KOBO */
+.resized-img {
+  width: clamp(80px, 50%, 500px);
+  height: auto;
+}
+
+.centered-img {
+  text-align: center;
+}
+
+#cylinder {
+  width: clamp(80px, 15%, 500px);
+  height: auto;
+}
