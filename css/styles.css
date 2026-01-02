@@ -10767,6 +10767,16 @@ textarea.form-control-lg {
   font-size: 1.5rem;
 }
 
+@media (max-width: 768px) {
+  .experience h2 {
+    text-align: center;
+  }
+  .experience-subsection,
+  .page-section {
+    padding: 1rem;
+  }
+}
+
 .experience {
   background-color: #fff;
   color: black;

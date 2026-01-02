@@ -115,7 +115,7 @@ iframe {
 
 .two-col video {
   justify-self: end;
-  width: clamp(200px, 90%, 350px);
+  width: clamp(100px, 90%, 350px);
   height: auto;
 }
 
