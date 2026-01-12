@@ -10561,6 +10561,7 @@ textarea.form-control-lg {
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
+  padding-bottom: 2rem;
 }
 @media (min-width: 992px) {
   .page-section .page-section-heading {
@@ -10802,7 +10803,6 @@ textarea.form-control-lg {
 .hobbies p {
   text-align: center;
   font-style: italic;
-  padding-top: 1rem;
 }
 
 /* Hobbies section grid */
@@ -10893,7 +10893,7 @@ textarea.form-control-lg {
   height: 100%;
   width: 100%;
 
-  padding-top: 52vh;
+  padding-top: 48vh;
   justify-content: center;
 
   color: white;
