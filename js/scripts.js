@@ -54,7 +54,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 // New intro animation
 
-const float_speed = 1.5;
+const float_speed = 3;
 const transition_speed = 0.05;
 const circle_size_divisor = 12;
 
