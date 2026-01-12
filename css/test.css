@@ -1,0 +1,122 @@
+/* .container {
+  border: 5px solid red;
+  height: 80vh;
+}
+
+.circle {
+  position: absolute;
+  top: -140px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+
+  animation: angledDrop linear forwards;
+  opacity: 1;
+}
+
+@keyframes angledDrop {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+
+  35% {
+    transform: translate(
+      var(--launchdx),
+      calc(var(--impact) * 100vh)
+    );
+    opacity: 1;
+  }
+
+ 
+  50% {
+    transform: translate(
+      var(--dxOne),
+      85vh
+    );
+  }
+
+
+  75% {
+    transform: translate(
+      var(--dxTwo),
+      calc(var(--impact) * 100vh)
+    );
+  }
+
+
+  100% {
+    transform: translate(var(--dxThree), 85vh);
+  }
+}
+ */
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.intro-section {
+  width: 100vw;
+  height: 100vh; /* or whatever height you want */
+}
+
+#sketch-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: black;
+}
+
+
+/* .intro {
+  height: calc(100vh - 2rem);
+  display: grid;
+  place-items: center;
+  margin-bottom: 5vh;
+  margin-top: -5vh;
+}
+
+.circle {
+  position: absolute;
+  top: -10vw;
+  width: var(--diameter);
+  height: var(--diameter);
+  border-radius: 50%;
+  object-fit: cover;
+
+  animation: angledDrop linear forwards;
+  opacity: 1;
+}
+
+@keyframes angledDrop {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  } */
+
+  /* first impact */
+  /* 40% {
+    transform: translate(
+      var(--launchdx),
+      calc(100vh + 10vw - var(--diameter))
+    );
+  } */
+
+  /* bounce back to hit navbar*/
+  /* 65% {
+    transform: translate(
+      var(--dx),
+      calc(10vw + var(--navbar-height) + 2rem) 
+    );
+  } */
+
+  /* settle */
+  /* 100% {
+    transform: translate(var(--finalx), 
+    calc(100vh + 10vw - var(--diameter)));
+  }
+} */

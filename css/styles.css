@@ -506,7 +506,7 @@ progress {
 }
 
 .lead {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 300;
 }
 
@@ -10553,12 +10553,11 @@ textarea.form-control-lg {
 }
 
 .page-section {
-  /* padding: 6rem 0; */
-  padding-top: 6rem;
-  padding-left: 6rem;
-  padding-right: 6rem;
-  padding-bottom: 3rem;
+  padding: 6rem 0;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
+
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
@@ -10731,6 +10730,8 @@ textarea.form-control-lg {
 .about-content {
   display: flex;
   gap: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
 }
 
 .about h2 {
@@ -10740,6 +10741,7 @@ textarea.form-control-lg {
 .portfolio {
   background-color: #fff;
   color: black;
+  padding-bottom: 1rem;
 }
 
 .portfolio .portfolio-item {
@@ -10756,7 +10758,6 @@ textarea.form-control-lg {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  /* background-color: rgba(26, 188, 156, 0.9); */
   background-color: black;
 }
 .portfolio .portfolio-item .portfolio-item-caption:hover {
@@ -10771,8 +10772,7 @@ textarea.form-control-lg {
   .experience h2 {
     text-align: center;
   }
-  .experience-subsection,
-  .page-section {
+  .experience{
     padding: 1rem;
   }
 }
@@ -10780,6 +10780,7 @@ textarea.form-control-lg {
 .experience {
   background-color: #fff;
   color: black;
+  padding-bottom: 1rem;
 }
 
 .experience p {
@@ -10794,6 +10795,45 @@ textarea.form-control-lg {
   padding-left: 3rem;
   padding-right: 3rem;
   padding-bottom: 3rem;
+}
+
+.hobbies {
+  background-color: #fff;
+  color: black;
+}
+.hobbies p {
+  text-align: center;
+  font-style: italic;
+  padding-top: 1rem;
+}
+
+/* Hobbies section grid */
+.grid-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grid-column img {
+  width: 100%;
+  padding-top: .25rem;
+  border-radius: .5rem;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .grid-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .grid-column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 .footer {
@@ -10821,3 +10861,42 @@ textarea.form-control-lg {
   background-color: black;
 }
 
+/* Intro animation */
+.intro-section {
+  position: relative;
+  overflow: hidden;
+
+  width: 100vw;
+  height: 100vh; /* or whatever height you want */
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 5vw;
+}
+
+#sketch-container {
+  padding-top: var(--navbar-height);
+  width: 100vw;
+  height: calc(100vh - (2 * var(--navbar-height)));
+  position: absolute;
+  background-color: black;
+  inset: 0;
+  z-index: 0;
+}
+
+/* Foreground text */
+.intro-text {
+  position: relative;
+  z-index: 1;
+
+  height: 100%;
+  width: 100%;
+
+  padding-top: 10vh;
+  justify-content: center;
+
+  color: white;
+  text-align: center;
+  pointer-events: none; /* optional */
+}
