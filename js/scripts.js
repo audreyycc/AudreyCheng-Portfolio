@@ -56,11 +56,11 @@ window.addEventListener('DOMContentLoaded', event => {
 
 const float_speed = 1.5;
 const transition_speed = 0.05;
-const circle_size_divisor = 8;
+const circle_size_divisor = 12;
 
 let floating = true;
 let circleImgs = []; // array to hold your images
-let num_circles = 5; // number of circles
+let num_circles = 6; // number of circles
 let circles = [];
 let circleSize;
 let maskedImgs = [];
