@@ -120,7 +120,7 @@ background(0,0,0);
     } else {
       let spacing = width / circles.length;
       c.targetX = i * spacing + circleSize;
-      c.targetY = height / 2 - circleSize / 2;
+      c.targetY = height / 2 - circleSize;
 
       c.x = lerp(c.x, c.targetX, transition_speed);
       c.y = lerp(c.y, c.targetY, transition_speed);
