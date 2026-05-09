@@ -33,19 +33,79 @@
     <div class="col-12 col-lg-4 order-2 order-lg-1" >
       <img src="assets/img/portfolio/Pacman_teamphoto.webp" class="img-fluid mx-auto d-block">
         <div class="caption">Team photo!</div> 
-      <embed src="assets/docs/Team9_ES50_Final_Project_Report_2024.pdf" type="application/pdf" width="100%" height="600px" title="Embedded PDF Document" />
+      <video class="img-fluid mx-auto dblock" controls>
+          <source src="assets/img/portfolio/PacmanDemo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      <div class="caption">Game Demo</div>
+      <img src="assets/img/portfolio/PacmanPartslist.webp" class="img-fluid mx-auto d-block">
+      <div class="caption">Parts List</div> 
     </div>
 
     <!-- ===== CENTER COLUMN ===== -->
     <div class="col-12 col-lg-8 order-1 order-lg-2">
-      <h1>Wireless Pacman-inspired Tag</h1>
+      <h1>Wireless Pacman-inspired Tag Game</h1>
       <p>Spring 2024</p>
 
       <div class="section">
         <h2>Project Description</h2>
 
         <p>
-          This project was completed as a final project for ENG-SCI 50: Introduction to Electrical Engineering. 
+          This project involved the design and fabrication of a two-player wireless robot game inspired by Pacman, where one player navigates a maze while the other
+          attempts to “tag” them using a laser-based detection system. The project integrated mechanical design, embedded systems, Bluetooth communication, and 
+          rapid prototyping into a fully interactive physical game.
+        <p>
+
+        <h2> Project Goal</h2>
+        <p>
+          The objective was to create an engaging multiplayer game using autonomous robot platforms controlled wirelessly through custom-built handheld controllers. 
+          The system required reliable real-time communication, stable robot mobility, and a functional laser/photoresistor tagging mechanism that could operate 
+          consistently in a dynamic environment.
+        </p>
+        
+        <h2>Engineering Design Process</h2>
+        <h3>Defining System Requirements</h3>
+          
+        <p>
+          We identified several key functional requirements:
+          wireless directional control for two independent robots,
+          reliable motor actuation and maneuverability within a constrained maze,
+          a tagging mechanism capable of detecting close-range interactions,
+          durable packaging that protected electronics, 
+          maze geometry optimized for gameplay and robot dimensions,
+          and these requirements drove both the electrical and mechanical system architecture.
+        </p>
+          
+        <h3>Iterative Electrical & Controls Development</h3>
+        <p>
+          The original commercial controller concept proved incompatible with the system requirements, so we pivoted to designing custom Bluetooth controllers 
+          using Arduino hardware. The control system translated button inputs into motor states that drove steering for forward, reverse, and turning motions. 
+          During testing, the motors failed to receive sufficient current directly from the microcontroller outputs. To resolve this, the design was revised to 
+          integrate motor drivers, significantly improving reliability and motor performance.
+        </p>
+          
+        <h3>Integration & Tagging Mechanism</h3> 
+        <p>
+          To simulate “tagging,” laser diodes were mounted to the ghost robot while the Pacman robot used photoresistors to detect incoming light. Initial testing 
+          revealed sensitivity issues caused by ambient lighting and limited sensor response. The design was then improved upon by switching to larger 
+          photoresistors for improved detection, tuning resistance thresholds in software, and enclosing sensors within custom housings to reduce environmental 
+          light interference. A neopixel indicator was added to provide immediate visual feedback when a successful tag was detected.
+        </p>
+
+        <h3>Mechanical Design</h3> 
+        <p>
+          Repeated testing exposed mechanical reliability issues, including disconnected wiring and robot instability during sharp turns. To address these problems, 
+          we designed custom enclosures and battery mounts in SolidWorks and fabricated them through 3D printing. The enclosures were designed to secure batteries 
+          and wiring during movement, shield photoresistors from ambient light, accommodate changing circuit layouts, and improve user visibility of the NeoPixel 
+          indicators. The robots also exhibited tipping during acceleration, leading to additional weight being added to the chassis to lower the center of gravity 
+          and improve stability.
+        </p>
+          
+        <h3>Maze Design</h3>
+        <p>
+          The maze geometry was designed around the physical dimensions and turning radius of the robot platforms. Lane widths were optimized to allow smooth 
+          navigation without excessive wall collisions, prevent both robots from occupying the same lane side-by-side, and increase gameplay difficulty while 
+          maintaining maneuverability.
         </p>
         
           <iframe src="https://www.youtube.com/embed/RLHtHJG8K30?si=pkEe6AS0S9dGWqtk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
